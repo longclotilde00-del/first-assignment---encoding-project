@@ -6,4 +6,4 @@ I selected these three letters because they give us an intimate glimpse into the
 
 This point precisely explains why XML can help structure and enrich my project, since the use of XML can clarify this intermingling of handwritten notes and typewritten text, thereby clarifying the structure of the letter while making it explicit with the help of metadata. Thus, XML allows us to give structure to all three letters by organizing the handwritten notes and clarifying their connection to the rest of the content. XML can help make understandable and clear the complex nature of these letters. 
 
-I used ChatGPT for this assignment to help me understand the errors detected by Oxygen in my XML and DTD files. 
+I used gen AI for this assignment to help me understand specific errors detected by Oxygen in my XML and DTD files but all the encoding is the result of my own work.
