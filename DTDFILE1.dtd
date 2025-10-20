@@ -1,0 +1,51 @@
+<!ELEMENT TEI (teiHeader, correspDesc+, text)>
+<!ATTLIST TEI xmlns CDATA #IMPLIED>
+
+<!ELEMENT teiHeader (fileDesc)>
+
+<!ELEMENT fileDesc (titleStmt, respStmt, publicationStmt, sourceDesc)>
+<!ELEMENT titleStmt (title, author)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT respStmt (resp, name)>
+<!ELEMENT resp (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT publicationStmt (distributor?)>
+<!ELEMENT distributor (#PCDATA)>
+<!ELEMENT sourceDesc (biblStruct)>
+<!ELEMENT biblStruct (monogr)>
+<!ELEMENT monogr (editor, title, imprint)>
+<!ELEMENT editor (#PCDATA)>
+<!ELEMENT imprint (pubPlace?, publisher, date)>
+<!ELEMENT pubPlace (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date when CDATA #IMPLIED>
+<!ELEMENT encodingDesc (samplingDecl)>
+<!ELEMENT samplingDecl (#PCDATA)>
+<!ELEMENT profileDesc (creation, langUsage)>
+<!ELEMENT creation (date)>
+<!ELEMENT langUsage (language)>
+<!ELEMENT language (#PCDATA)>
+
+<!ELEMENT correspDesc (correspAction+)>
+<!ATTLIST correspDesc xml:id ID #IMPLIED>
+<!ELEMENT correspAction (persName?, placeName?, date)>
+<!ATTLIST correspAction type (sent | received) #REQUIRED>
+<!ELEMENT persName (#PCDATA)>
+<!ELEMENT placeName (#PCDATA)>
+
+<!ELEMENT text (body)>
+<!ELEMENT body (div)>
+<!ELEMENT div (head?, opener?, p+, closer?)>
+<!ATTLIST div type (letter) #REQUIRED>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT opener (dateline)>
+<!ELEMENT dateline (placeName?, date)>
+<!ELEMENT placename (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT closer (salute?, signed?)>
+<!ELEMENT salute (#PCDATA)>
+<!ELEMENT signed (#PCDATA)>
+<!ELEMENT postscript (label?, p+)>
+<!ELEMENT label (#PCDATA)>

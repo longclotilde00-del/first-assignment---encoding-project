@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"?>
+ 
+<!DOCTYPE TEI SYSTEM "DTDFILE1.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title></title>
+            <author></author>
+            <respStmt>
+               <resp></resp>
+               <name></name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+              <distributor></distributor>
+         </publicationStmt>
+         <sourceDesc>
+             <biblStruct>
+               <monogr>
+                  <editor></editor>
+                  <title></title>
+                  <imprint>
+                     <pubPlace></pubPlace>
+                     <publisher></publisher>
+                     <date></date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <samplingDecl>
+            <p></p>
+         </samplingDecl>
+      </encodingDesc>
+       <profileDesc>
+         <creation>
+            <date></date>
+         </creation>
+         <langUsage>
+            <language ident="fr">français</language>
+         </langUsage>
+      <correspDesc xml:id="message1">
+         <correspAction type="sent">
+            <persName></persName>
+            <placeName></placeName>
+            <date/>
+         </correspAction>
+      </correspDesc>
+       </profileDesc>      
+  </teiHeader>
+  
+  <text>
+     <body>
+      <div type= "letter">
+        <head></head> 
+        <opener>
+            <dateline>
+               <placeName></placeName>
+               <date></date>
+            </dateline>
+        </opener>
+            <p></p>
+        <closer>
+            <salute></salute>
+            <signed></signed>
+        </closer>
+        <postscript>
+           <label></label>
+           <p></p>
+        </postscript>
+      </div>
+     </body>
+  </text>
+</TEI>
